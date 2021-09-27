@@ -1,0 +1,7 @@
+* {box-sizing: border-box; padding: 0; margin: 0}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-rendering: optimizeLegibility !important; /* deixa a fonte menos "pixalizada". A 2ª propriedade sobreescreve qualquer outra text-rendering*/
+    -webkit-font-smoothing: antialiased !important;
+}
