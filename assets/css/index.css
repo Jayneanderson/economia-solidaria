@@ -5,3 +5,84 @@ body {
     text-rendering: optimizeLegibility !important; /* deixa a fonte menos "pixalizada". A 2ª propriedade sobreescreve qualquer outra text-rendering*/
     -webkit-font-smoothing: antialiased !important;
 }
+
+:root {
+    --green-weak: #00CDB4;
+    --green-medium: #00B5BF;
+    --green-strong: #185669;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding: 0;
+}
+
+.header {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, .6);
+}
+
+.logo {
+    width: 215px;
+}
+
+.navigator {
+    width: calc(100% - 500px);
+    border: 1px solid greenyellow;
+
+}
+
+.list {
+    display: flex;
+}
+
+.list-item {
+}
+
+.item-link {
+    display: flex;
+    padding: 13px 20px;
+    color: var(--green-strong);
+    font-size: 16px;
+    transition: .2s;
+}
+
+.item-link:hover {
+    color: var(--green-weak);
+    transition: .2s;
+}
+
+.button-container {
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button {
+    width: 183px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: var(--green-weak);
+    color: #fff;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.button:hover {
+    background-color: var(--green-strong);
+    transition: .2s;
+}
