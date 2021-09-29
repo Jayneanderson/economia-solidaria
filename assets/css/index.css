@@ -30,7 +30,7 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 0 32px;
-    box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, .6);
+    box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, .9);
 }
 
 .logo {
@@ -83,6 +83,44 @@ a {
 }
 
 .button:hover {
-    background-color: var(--green-strong);
     transition: .2s;
+    background-color: var(--green-strong);
+}
+
+.banner-container {
+    background-color: #F5F5F5;
+}
+
+.banner {
+    padding: 13% 18%;
+}
+
+.information-title {
+    color: #185669;
+}
+
+.information-contrast {
+    color: #FFA000;
+}
+
+.banner-information {
+    width: 400px;
+}
+
+.banner-information .button-container {
+    justify-content: flex-start;
+}
+
+#buttonBanner {
+    width: 240px;
+    height: 60px;
+    margin-top: 24px;
+    background-color: #FFA000;
+    
+}
+
+#buttonBanner:hover {
+    width: 240px;
+    height: 60px;
+    background-color:#FF6F00;
 }
