@@ -93,6 +93,11 @@ a {
 
 .banner {
     padding: 13% 18%;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/banner.jpg') no-repeat;
+    background-position: right;
+}
+
+.banner-background {
 }
 
 .information-title {
