@@ -1,0 +1,10 @@
+
+.card-container {
+    width: 300px;
+    border: 1px solid red;
+}
+
+#cardButton {
+    width: 100px;
+    font-size: 14px;
+}
