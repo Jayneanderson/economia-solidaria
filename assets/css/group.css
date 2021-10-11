@@ -1,9 +1,56 @@
+.groups {
+    margin: 40px 0;
+}
+
+.banner {
+    height: 400px;
+}
+
+#solidarity {
+    height: 100%;
+}
+
+.card-content {
+    width: 100%;
+    padding: 0 8%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px);
+    justify-content: space-between;
+    grid-gap: 16px;
+}
+
+.card {
+    width: 350px;
+    /* margin-bottom: 16px; */
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .3);
+}
 
 .card-img {
+    border-radius: 8px;
     width: 100%;
+    height: 150px;
 }
 .card-wrapper {
     padding: 12px 18px;
+}
+
+.card-icon {
+    width: 16px;
+}
+
+.card-person-city {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-icon {
+    width: 18px;
+    fill: #212121;
 }
 
 .card-person,
@@ -11,9 +58,12 @@
     color: #757575;
 }
 
+.card-city {
+    margin-left: 5px;
+}
+
 .card-container {
     width: 300px;
-    border: 1px solid red;
 }
 
 #cardButton {
@@ -37,4 +87,8 @@
 
 .card-button .button-container {
     width: auto;
+}
+
+.search {
+    display: flex;
 }
