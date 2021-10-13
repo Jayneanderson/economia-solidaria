@@ -1,9 +1,14 @@
 * {box-sizing: border-box; padding: 0; margin: 0}
 
+html {
+    font-size: 16px;
+}
+
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lato', sans-serif;
     text-rendering: optimizeLegibility !important; /* deixa a fonte menos "pixalizada". A 2ª propriedade sobreescreve qualquer outra text-rendering*/
     -webkit-font-smoothing: antialiased !important;
+    padding-bottom: 32px;
 }
 
 :root {
@@ -21,25 +26,34 @@ a {
 }
 
 .container {
-    padding: 0;
+    padding: 0 8%;
+}
+
+.header-container {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .32);
+    z-index: 999;
+    
 }
 
 .header {
-    height: 90px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 32px;
-    box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, .9);
 }
 
 .logo {
-    width: 215px;
+    width: 18%;
 }
 
 .navigator {
-    width: calc(100% - 500px);
-}
+    width: calc(100% - 18%);
+ }
 
 .list {
     display: flex;
@@ -52,7 +66,7 @@ a {
     display: flex;
     padding: 13px 20px;
     color: var(--green-strong);
-    font-size: 16px;
+    font-size: 20px;
     transition: .2s;
 }
 
@@ -76,6 +90,7 @@ a {
     border-radius: 8px;
     background-color: var(--green-weak);
     color: #fff;
+    font-size: 1.13rem;
     font-weight: bold;
     transition: .2s;
 }
@@ -85,17 +100,25 @@ a {
     background-color: var(--green-strong);
 }
 
+.banner-container {
+    padding-top: 90px;
+    height: calc(100% - 90px);
+    background-color: #F5F5F5;
+    z-index: 0;
+}
+
+#banner-index {
+    background: url('../img/banner.svg') no-repeat;
+    background-position: right;
+    background-size: 800px auto;
+}
+
 .banner {
     display: flex;
     justify-content: space-between;
     padding: 3% 0;
-    padding-left: 18%;
-    padding-right: 13%;
-}
-
-.banner-container {
-    /* padding: 0 18%; */
-    background-color: #F5F5F5;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 .banner-information {
@@ -107,6 +130,7 @@ a {
 }
 
 .information-title {
+    font-size: 2rem;
     color: #185669;
 }
 
@@ -139,4 +163,97 @@ a {
 .banner-image {
     width: 450px;
     border-radius: 8px;
+}
+
+#initiativeTitle {
+    text-align: center;
+}
+
+.initiative-container {
+    padding: 5% 8%;
+}
+
+.initiatives {
+    width: 100%;
+    display: flex;
+}
+
+.initiative {
+    padding: 18px;
+    padding-top: 32px;
+    text-align: center;
+}
+
+.initiative-img {
+    width: 100px;
+}
+
+.card-blog-container {
+    padding: 0 8%;
+}
+
+#blog-title {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.cards-blog-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px);
+    justify-content: space-between;
+    grid-gap: 16px;
+}
+
+.card-blog-content {
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .32);
+}
+
+.card-blog {
+    padding: 16px;
+}
+
+.card-blog-img {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.card-blog-title {
+    color: #212121;
+    line-height: 34px;
+}
+
+.card-blog-clock {
+    display: flex;
+}
+
+.clock {
+    width: 16px;
+    margin-right: 5px;
+}
+
+.card-blog-text {
+    margin: 16px 0;
+    /* As propriedades abaixo são para mostrar
+    apenas 3 linhas no card. */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3
+}
+
+.card-blog-link {
+    display: flex;
+    color: var(--green-strong);
+    transition: .2s;
+}
+
+.card-blog-link:hover {
+    color: var(--green-medium);
+    transition: .2s;
+}
+
+.card-blog-more {
+    margin-left: 5px;
 }
