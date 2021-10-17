@@ -15,6 +15,7 @@ body {
     --green-weak: #00CDB4;
     --green-medium: #00B5BF;
     --green-strong: #185669;
+    --white: #fff;
 }
 
 ul {
@@ -23,6 +24,12 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+#subtitle {
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 24px;
 }
 
 .container {
@@ -186,6 +193,48 @@ a {
 
 .initiative-img {
     width: 100px;
+}
+
+#impact {
+    padding: 4% 0;
+    background-color: var(--green-weak);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 230px);
+    justify-content: center;
+    grid-gap: 16px;
+}
+
+.card {
+    display: flex;
+    border: 2px solid var(--white);
+    padding: 16px;
+}
+
+.card-impact {
+    border-radius: 8px;
+}
+
+.card-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.card-text {
+    color: #fff;
+    text-align: center;
+}
+
+.card-img {
+    width: 90px;
+}
+
+.card-title {
+    color: var(--white);
 }
 
 .card-blog-container {
