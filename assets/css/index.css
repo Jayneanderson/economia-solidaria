@@ -32,6 +32,10 @@ a {
     margin-bottom: 24px;
 }
 
+.padding {
+    padding: 0 8%;
+}
+
 .container {
     padding: 0 8%;
 }
@@ -123,9 +127,7 @@ a {
 .banner {
     display: flex;
     justify-content: space-between;
-    padding: 3% 0;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding: 3% 8%;
 }
 
 .banner-information {
@@ -318,4 +320,97 @@ a {
     fill: var(--green-strong);
     transition: .2s;
 
+}
+
+.footer {
+    width: 100%;
+    background-color: var(--green-weak);
+}
+
+.footer-list {
+    display: flex;
+}
+
+.footer-element {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    color: var(--white);
+}
+
+.footer-img {
+    margin-right: 5px;
+}
+
+.footer-text {
+    margin: 16px 0;
+}
+
+#lastText {
+    margin-top: 0;
+}
+
+.footer-title {
+    margin-bottom: 10px;
+}
+
+.links {
+    width: 165px;
+}
+
+.footer-links {
+    flex-direction: column;
+}
+
+.footer-links .item-link {
+    padding-left: 0;
+    padding-top: 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--white);
+}
+
+.footer-links .item-link::before {
+    content: '•';
+    margin-right: 5px;
+}
+
+.footer-element .card-blog-title {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--white);
+}
+
+.footer-element .card-blog-clock {
+    align-items: center;
+}
+
+.footer-element .clock {
+    margin-top: 2px;
+}
+
+.footer-element .clock path {
+    fill: var(--white);
+
+}
+
+.date {
+    font-size: 14px;
+}
+
+.input {
+    height: 40px;
+    border: none;
+    color: var(--green-strong);
+    border-radius: 8px;
+    padding: 10px 25px;
+}
+
+.footer-btn {
+    display: flex;    
+}
+
+.button-style {
+    background-color: #212121;
 }
