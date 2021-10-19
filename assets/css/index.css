@@ -231,10 +231,12 @@ a {
 
 .card-img {
     width: 90px;
+    height: 74px;
 }
 
 .card-title {
     color: var(--white);
+    font-size: 2rem;
 }
 
 .card-blog-container {
@@ -294,15 +296,26 @@ a {
 
 .card-blog-link {
     display: flex;
-    color: var(--green-strong);
-    transition: .2s;
-}
-
-.card-blog-link:hover {
     color: var(--green-medium);
     transition: .2s;
 }
 
-.card-blog-more {
+.card-blog-link:hover {
+    color: var(--green-strong);
+    transition: .2s;
+}
+
+.card-blog-icon {
     margin-left: 5px;
+}
+
+.card-blog-icon path {
+    fill: var(--green-weak);
+    transition: .2s;
+}
+
+.card-blog-link:hover path {
+    fill: var(--green-strong);
+    transition: .2s;
+
 }
