@@ -87,13 +87,13 @@
     color: #212121;
 }
 
-.card-button {
+.card-button-group {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-.card-button .button-container {
+.card-button-group .button-container {
     width: auto;
 }
 
@@ -134,4 +134,19 @@
 .filter {
     height: 30px;
     border: 1px solid #185669;
+}
+
+#more {
+    height: 50px;
+    font-size: 16px;
+    border: 1px solid #00CDB4;
+    color: #00CDB4;
+    background-color: transparent;
+    transition: .2s;
+}
+
+#more:hover {
+    color: #fff;
+    background-color: #00CDB4;
+    transition: .2s;
 }
