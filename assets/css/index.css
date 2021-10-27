@@ -139,6 +139,7 @@ a {
 }
 
 .information-title {
+    margin-bottom: 3%;
     font-size: 2rem;
     color: #185669;
 }
@@ -189,7 +190,6 @@ a {
 
 .initiative {
     padding: 18px;
-    padding-top: 32px;
     text-align: center;
 }
 
@@ -242,7 +242,7 @@ a {
 }
 
 .card-blog-container {
-    padding: 0 8%;
+    padding: 4% 8%;
 }
 
 #blog-title {
@@ -322,6 +322,25 @@ a {
 
 }
 
+.flow {
+    /* background: url('../img/wave.png') no-repeat; */
+    padding-bottom: 3%;
+}
+
+.flow-img-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.flow-wrapper {
+    width: 700px;
+    padding: 2% 0;
+    border-radius: 8px;
+    box-shadow: 0px 5px 28px 1.5px rgba(149, 152, 200, 20%);
+    /* 0px 5px 28.5px 1.5px rgb(149 152 200 / 20%); */
+}
+
 .footer {
     width: 100%;
     background-color: var(--green-weak);
@@ -392,7 +411,7 @@ a {
 
 .footer-element .clock path {
     fill: var(--white);
-
+    
 }
 
 .date {
@@ -405,7 +424,6 @@ a {
 }
 
 .input {
-    width: 100%;
     height: 40px;
     border: none;
     color: var(--green-strong);
@@ -417,7 +435,7 @@ a {
     width: 40px;
     height: 40px;
     position: absolute;
-    right: 8px;
+    right: 0px;
     border: none;
     border-radius: 8px;
     background-color: #212121;
@@ -429,5 +447,7 @@ a {
 
 }
 
-#email {
+.footer-icon:hover path {
+    fill: #ffffff;
+    transition: .2s;
 }
