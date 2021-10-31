@@ -1,0 +1,143 @@
+.concept {
+    width: 100%;
+    height: 100%;
+}
+
+.concept-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 45px;
+}
+
+.concept-background {
+    height: 600px;
+    background-image: url('../img/nego-fugido.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.concept-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+    color: var(--green-medium);
+}
+
+.owl-carousel-container {
+    max-width: 840px;
+    min-height: 412px;
+    border-radius: 8px;
+    background-color: var(--white);
+}
+
+#owl {
+    display: block;
+}
+
+.items {
+    cursor: grab;
+}
+
+.testimonial-item {
+    display: flex;
+    padding: 24px 80px;
+}
+
+.testimonial-image-content {
+    padding-right: 32px;
+}
+
+#owl .owl-item img {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+}
+
+.testimonial-text-content {
+    padding-top: 12px;
+    padding-right: 32px;
+}
+
+.testimonial-text {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--green-strong);
+}
+
+.testimonial-text-bold {
+    color: var(--green-medium);
+}
+
+.testimonial-cite {
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0;
+}
+
+.testimonial-name, .testimonial-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--green-strong);
+}
+
+.testimonial-title {
+    margin-top: 8px;
+    font-weight: 400;
+    color: rgba(0, 204, 180, .6);
+}
+
+.testimonial-button-wrapper {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.testimonial-button {
+    display: inline-block;
+    padding: 16px 48px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: var(--green-weak);
+    color: var(--white);
+    transition: .2s;
+}
+
+.testimonial-button:hover {
+    background-color: var(--green-strong);
+    transition: .2s;
+}
+
+.testimonial-button-text {
+    display: flex;
+}
+
+.testimonial-icon {
+    margin-right: 8px;
+}
+
+/* Aqui doi para tirar o hover ao passar o mouse por cima do button
+   Veja que o framework não centralizou o ícone dentro do button
+*/
+#owl .owl-nav [class*=owl-]:hover {
+    background-color: transparent;
+}
+
+#owl .owl-prev, #owl .owl-next {
+    position: absolute;
+} 
+
+
+#owl .owl-prev {
+    left: 25px;
+    top: 160px;
+}
+
+#owl .owl-next {
+    right: 25px;
+    top: 160px;
+}
+
+#arrow-prev {
+}
