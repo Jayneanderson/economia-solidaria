@@ -141,3 +141,39 @@
 
 #arrow-prev {
 }
+
+.mission-content {
+    padding: 8%;
+}
+
+.mission-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mission-image,
+.mission-content-text {
+    padding: 10px;
+}
+
+#missionImage {
+    width: 550px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.mission-content-text {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.mission-text {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--green-strong);
+}
+
+.mission-text-bold {
+    color: var(--green-weak)
+}
