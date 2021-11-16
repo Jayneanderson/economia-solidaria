@@ -143,7 +143,7 @@
 }
 
 .mission-content {
-    padding: 8%;
+    padding: 4%;
 }
 
 .mission-wrapper {
@@ -176,4 +176,86 @@
 
 .mission-text-bold {
     color: var(--green-weak)
+}
+
+.our-team {
+    background: url('../img/wave.png') no-repeat;
+    background-size: cover;
+    padding: 96px 92px;
+}
+
+#owlOurTeam .item {
+    width: 262.5px;
+    padding: 24px 32px;
+    border-radius: 8px;
+    background-color: var(--white);
+}
+
+#owlOurTeam .owl-item.active {
+    width: 262.5px;
+}
+
+.team-wrapper {
+    position: relative;
+}
+
+.team-img {
+    width: 202px;
+    height: 202px;
+    border-radius: 50%;
+}
+
+.team-icons {
+    display: flex;
+}
+
+.team-icon path {
+    fill: #212121;
+}
+
+.team-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 28px 1.5px rgba(149, 152, 200, .25);
+    background-color: var(--white);
+    transition: .2s;
+}
+
+.team-link:hover {
+    background-color: var(--green-medium);
+    transition: .2s;
+}
+
+.team-link:hover .team-icon path {
+    fill: #fff;
+}
+
+#social-left {
+    left: 20px;
+}
+
+#social-right {
+    right: 20px;
+}
+
+.team-bottom {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.team-person {
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.team-job {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--green-medium);
 }
