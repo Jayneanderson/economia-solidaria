@@ -116,11 +116,12 @@
     display: flex;
     align-items: center;
     position: relative;
+    border: 1px solid red;
+    padding: 24px;
 }
 
 .search-icon {
-    left: 8px;
-    position: absolute;
+    height: 16px;
 }
 
 #input {
@@ -133,9 +134,22 @@
 }
 
 .filter {
-    height: 30px;
+    padding: 10px 16px;
     border: 1px solid #185669;
+    font-size: 16px;
 }
+
+.search-button {
+    padding: 8.5px 9px;
+    border: 1px solid #185669;
+    border-left: none;
+    background-color: #f9f9f9;
+}
+
+.icon-search-button {
+   
+}
+
 
 option {
     color: var(--green-strong);
