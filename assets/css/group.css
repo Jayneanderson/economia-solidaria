@@ -12,7 +12,8 @@
 }
 
 .groups {
-    padding: 4% 8%;
+    width: calc(100% - 18%);
+    padding: 0 4%;
 }
 
 #solidarity {
@@ -25,13 +26,13 @@
 
 .cards-group {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 350px);
+    grid-template-columns: repeat(auto-fit, 300px);
     justify-content: space-between;
     grid-gap: 16px;
 }
 
 .card-group {
-    width: 350px;
+    width: auto;
     /* margin-bottom: 16px; */
     border-radius: 12px;
     box-shadow: 0px 5px 28px 2px rgba(149, 152, 200, 30%);
@@ -68,6 +69,9 @@
 }
 
 .card-city-group {
+}
+
+.card-person-group {
     margin-left: 5px;
 }
 
@@ -86,6 +90,12 @@
     line-height: 1.2;
     font-size: 15px;
     color: #212121;
+    /* As propriedades abaixo são para mostrar
+    apenas 3 linhas no card. */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3
 }
 
 .card-button-group {
@@ -106,50 +116,167 @@
     margin-bottom: 8px;
 }
 
-.search {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.title {
+    padding-top: 16px;
+    font-size: 2rem;
+    text-align: center;
+    color: #185669;
 }
 
 .search-filter {
     display: flex;
     align-items: center;
     position: relative;
-    border: 1px solid red;
-    padding: 24px;
-}
-
-.search-icon {
-    height: 16px;
+    padding: 24px 0;
 }
 
 #input {
     width: 30vw;
-    padding-left: 32px;
 }
 
 #input:focus {
     border-color: #212121;
 }
 
+
 .filter {
-    padding: 10px 16px;
+    padding: 10px 18px;
     border: 1px solid #185669;
     font-size: 16px;
 }
 
 .search-button {
-    padding: 8.5px 9px;
+    padding: 9.4px 9px;
     border: 1px solid #185669;
     border-left: none;
     background-color: #f9f9f9;
+    
+}
+
+.search-button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 205, 180, 0.4);
+}
+
+.search-button:hover .search-icon path {
 }
 
 .icon-search-button {
    
 }
 
+.search-icon {
+    left: 8px;
+    height: 16px;
+}
+
+.main {
+}
+
+.main-columns {
+    width: 100%;
+    display: flex;
+    padding-left: 2%;
+}
+
+.aside {
+    width: 18%;
+
+}
+
+.filter-groups {
+    border-radius: 3px;
+}
+
+.filter-city {
+}
+
+.filter-text {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(33, 33, 33, 0.9);
+}
+
+.filter-city-select {
+    position: relative;
+    padding : 8px;
+    margin-bottom: 10px;
+    border: 1px solid #185669;
+    transition: .2s;
+    font-weight: 400;
+    background-color: #fff;
+    color: #757575;
+}
+
+.filter-city-select:hover {
+    cursor: pointer;
+    transition: .2s;
+    background-color: rgba(117, 117, 117, .1);
+    color: #185669;
+}
+
+.filter-city-select::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border-top: 2px solid #757575;
+    border-right: 2px solid #757575;
+    transform: rotate(134deg);
+}
+
+.filter-city-select:hover::after {
+    border-top: 2px solid #185669;
+    border-right: 2px solid #185669;
+}
+
+.custom-filter {
+    border-radius: 5px;
+    box-shadow: 0px 5px 28px 2px rgba(149, 152, 200, 30%);
+}
+
+#search-city {
+    width: 100%;
+    padding : 10px;
+    outline: none;
+    border: 1px solid #757575;
+    border-radius: 5px 5px 0px 0px;
+}
+
+#search-city:focus {
+    border: 1px solid rgba(24, 86, 105, 1);
+}
+
+.filter-city-item {
+    padding: 5px 0;
+    border-radius: 3px;
+    transition: .2s ease all;
+}
+
+.filter-city-item:hover {
+    background-color: rgba(0, 181, 191, 0.3);
+    transition: .2s ease all;
+}
+
+.label-city {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 8px; /*esse padding está aqui e não no li para pegar todo elemento dentro */
+}
+
+.label-city:hover {
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
 
 option {
     color: var(--green-strong);
@@ -172,7 +299,7 @@ option {
 
 #more {
     height: 50px;
-    margin-top: 40px;
+    margin: 40px 0;
     font-size: 16px;
     border: 1px solid #00CDB4;
     color: #00CDB4;

@@ -56,173 +56,185 @@
             </div>
         </div>
     </section>
-    <h1>Coloque um título aqui</h1>
-    <aside>
-        <!--Aqui ficará dentro de uma div ao lado da section abaixo.
-            Lembre-se que que algumas funções abaixo mudarão de lugar-->
-        <div class="search-filter">
-            <!-- <img class="search-icon" src="assets/img/search_24px.svg" alt="Ícone de lupa"> -->
-            <label for="">
-                <input class="filter" type="text" placeholder="Pesquisar algum grupo ou instituição" id="input">
-            </label>
-            <button class="search-button">
-                <span class="icon-search-button">
-                    <!-- <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M11.965 11.255H12.755L17.745 16.255L16.255 17.745L11.255 12.755V11.965L10.985 11.685C9.845 12.665 8.365 13.255 6.755 13.255C3.165 13.255 0.255005 10.345 0.255005 6.755C0.255005 3.165 3.165 0.255005 6.755 0.255005C10.345 0.255005 13.255 3.165 13.255 6.755C13.255 8.365 12.665 9.845 11.685 10.985L11.965 11.255ZM2.255 6.755C2.255 9.245 4.26501 11.255 6.755 11.255C9.245 11.255 11.255 9.245 11.255 6.755C11.255 4.26501 9.245 2.255 6.755 2.255C4.26501 2.255 2.255 4.26501 2.255 6.755Z"
-                        fill="#212121" />
-                    </svg> -->
-                    <img class="search-icon" src="assets/img/search_24px.svg" alt="Ícone de lupa">
-                </span>
-            </button>
-        </div>
-    </aside>
+    <h1 class="title">Grupos Mapeados</h1>
+    <main class="main">
+        <div class="main-columns">
+            <aside class="aside">
+                <div class="filter-groups">
+                    <div class="group-city">
+                        <div class="filter-city">
+                            <span class="filter-text">Cidades</span>
+                            <div class="filter-city-select">
+                                Selecione a cidade
+                            </div>
 
-    <section class="groups">
-
-        <div class="search-container">
-            <p class="search-text">Pesquisar algum grupo ou instituição</p>
-
-            <div class="search">
-                <div class="search-filter">
-                    <!--Isso aqui foi pra cima (aside)-->
-                    <img class="search-icon" src="assets/img/search_24px.svg" alt="Ícone de lupa">
-                    <label for="">
-                        <input class="filter" type="text" placeholder="Ex: Capoeira" id="input">
-                    </label>
-                </div>
-
-                <div class="search-options">
-                    <select name="city" class="filter" id="city">
-                        <option value="">Cidade</option>
-                        <option value="santoAmaro">Santo Amaro</option>
-                        <option value="santoAmaro">Cachoeira</option>
-                        <option value="santoAmaro">Cachoeira</option>
-                    </select>
-                    <select name="grupoType" class="filter" id="groupType">
-                        <option value="">Tipo</option>
-                        <option value="capoeira">Capoeira</option>
-                        <option value="manisfestaçõesCulturais">Manifestações Culturais</option>
-                        <option value="filarmonica">Filarmônica</option>
-                    </select>
-
-                </div>
-            </div>
-
-        </div>
-        <div class="card-content-group">
-            <div class="cards-group">
-                <div class="card-group">
-                    <img class="card-img-group" src="assets/img/acssa.jpg" alt="Entrega de certificado">
-                    <div class="card-wrapper-group">
-
-                        <h2 class="card-title-group">Grupo de Capoeira</h2>
-                        <div class="card-person-city-group">
-                            <svg class="card-icon-group" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none">
-                                <g>
-                                    <path
-                                        d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM7 9C7 6.24 9.24 4 12 4C14.76 4 17 6.24 17 9C17 11.88 14.12 16.19 12 18.88C9.92 16.21 7 11.85 7 9ZM9.5 9C9.5 7.61929 10.6193 6.5 12 6.5C12.8932 6.5 13.7185 6.9765 14.1651 7.75C14.6116 8.5235 14.6116 9.4765 14.1651 10.25C13.7185 11.0235 12.8932 11.5 12 11.5C10.6193 11.5 9.5 10.3807 9.5 9Z"
-                                        fill="black" />
-                                </g>
-                            </svg>
-                            <span class="card-person-group">Carneirinho |</span>
-                            <span class="card-city-group">Sant Amaro - BA</span>
-                        </div>
-                        <!--fim div pessoa e cidade-->
-                        <p class="card-text-group">Grupo de capoeira voltado a desenvolver rodas para o público tal e
-                            tal
-                            e
-                            tal</p>
-
-                        <div class="card-button-group">
-                            <small class="card-city-group">Tipo do grupo</small>
-                            <div class="button-container">
-                                <a href="#" class="button" id="cardButton">
-                                    Ver mais
-                                </a>
+                            <!--A div abaixo vai surgir quanto eu clicar na div de cima-->
+                            <div class="custom-filter">
+                                <label for="search-city">
+                                    <input id="search-city" type="text" placeholder="Digite o nome da cidade">
+                                </label>
+                                <!--Lembre-se de mudar os ids das cidades-->
+                                <ul class="filter-city-list">
+                                    <li class="filter-city-item">
+                                        <label class="label-city" for="santoAmaro">
+                                            <input class="input-city" id="santoAmaro" type="checkbox">Santo Amaro
+                                        </label>
+                                    </li>
+                                    <li class="filter-city-item">
+                                        <label class="label-city" for="santoAmaro">
+                                            <input class="input-city" id="santoAmaro" type="checkbox">Santo Amaro
+                                        </label>
+                                    </li>
+                                    <li class="filter-city-item">
+                                        <label class="label-city" for="santoAmaro">
+                                            <input class="input-city" id="santoAmaro" type="checkbox">Santo Amaro
+                                        </label>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--Fim do card-->
-                <div class="card-group">
-                    <img class="card-img-group" src="assets/img/acssa.jpg" alt="Entrega de certificado">
-                    <div class="card-wrapper-group">
+            </aside>
 
-                        <h2 class="card-title-group">Grupo de Capoeira</h2>
-                        <div class="card-person-city-group">
-                            <svg class="card-icon-group" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none">
-                                <g>
-                                    <path
-                                        d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM7 9C7 6.24 9.24 4 12 4C14.76 4 17 6.24 17 9C17 11.88 14.12 16.19 12 18.88C9.92 16.21 7 11.85 7 9ZM9.5 9C9.5 7.61929 10.6193 6.5 12 6.5C12.8932 6.5 13.7185 6.9765 14.1651 7.75C14.6116 8.5235 14.6116 9.4765 14.1651 10.25C13.7185 11.0235 12.8932 11.5 12 11.5C10.6193 11.5 9.5 10.3807 9.5 9Z"
-                                        fill="black" />
-                                </g>
-                            </svg>
-                            <span class="card-person-group">Carneirinho |</span>
-                            <span class="card-city-group">Sant Amaro - BA</span>
-                        </div>
-                        <!--fim div pessoa e cidade-->
-                        <p class="card-text-group">Grupo de capoeira voltado a desenvolver rodas para o público tal e
-                            tal
-                            e
-                            tal</p>
-
-                        <div class="card-button-group">
-                            <small class="card-city-group">Tipo do grupo</small>
-                            <div class="button-container">
-                                <a href="#" class="button" id="cardButton">
-                                    Ver mais
-                                </a>
-                            </div>
-                        </div>
+            <section class="groups">
+                <div>
+                    <div class="search-filter">
+                        <label for="">
+                            <input class="filter" type="text" placeholder="Pesquisar algum grupo ou instituição" id="input">
+                        </label>
+                        <button class="search-button">
+                            <span class="icon-search-button">
+                                <svg class="search-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M11.965 11.255H12.755L17.745 16.255L16.255 17.745L11.255 12.755V11.965L10.985 11.685C9.845 12.665 8.365 13.255 6.755 13.255C3.165 13.255 0.255005 10.345 0.255005 6.755C0.255005 3.165 3.165 0.255005 6.755 0.255005C10.345 0.255005 13.255 3.165 13.255 6.755C13.255 8.365 12.665 9.845 11.685 10.985L11.965 11.255ZM2.255 6.755C2.255 9.245 4.26501 11.255 6.755 11.255C9.245 11.255 11.255 9.245 11.255 6.755C11.255 4.26501 9.245 2.255 6.755 2.255C4.26501 2.255 2.255 4.26501 2.255 6.755Z"
+                                        fill="#212121" />
+                                </svg>
+                            </span>
+                        </button>
                     </div>
                 </div>
-                <!--Fim do card-->
-                <div class="card-group">
-                    <img class="card-img-group" src="assets/img/acssa.jpg" alt="Entrega de certificado">
-                    <div class="card-wrapper-group">
+                <div class="card-content-group">
+                    <div class="cards-group">
+                        <div class="card-group">
+                            <img class="card-img-group" src="assets/img/acssa.jpg" alt="Entrega de certificado">
+                            <div class="card-wrapper-group">
 
-                        <h2 class="card-title-group">Grupo de Capoeira</h2>
-                        <div class="card-person-city-group">
-                            <svg class="card-icon-group" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none">
-                                <g>
-                                    <path
-                                        d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM7 9C7 6.24 9.24 4 12 4C14.76 4 17 6.24 17 9C17 11.88 14.12 16.19 12 18.88C9.92 16.21 7 11.85 7 9ZM9.5 9C9.5 7.61929 10.6193 6.5 12 6.5C12.8932 6.5 13.7185 6.9765 14.1651 7.75C14.6116 8.5235 14.6116 9.4765 14.1651 10.25C13.7185 11.0235 12.8932 11.5 12 11.5C10.6193 11.5 9.5 10.3807 9.5 9Z"
-                                        fill="black" />
-                                </g>
-                            </svg>
-                            <span class="card-person-group">Carneirinho |</span>
-                            <span class="card-city-group">Sant Amaro - BA</span>
-                        </div>
-                        <!--fim div pessoa e cidade-->
-                        <p class="card-text-group">Grupo de capoeira voltado a desenvolver rodas para o público tal e
-                            tal
-                            e
-                            tal</p>
+                                <h3 class="card-title-group">Grupo de Capoeira</h3>
+                                <div class="card-person-city-group">
+                                    <svg class="card-icon-group" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none">
+                                        <g>
+                                            <path
+                                                d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM7 9C7 6.24 9.24 4 12 4C14.76 4 17 6.24 17 9C17 11.88 14.12 16.19 12 18.88C9.92 16.21 7 11.85 7 9ZM9.5 9C9.5 7.61929 10.6193 6.5 12 6.5C12.8932 6.5 13.7185 6.9765 14.1651 7.75C14.6116 8.5235 14.6116 9.4765 14.1651 10.25C13.7185 11.0235 12.8932 11.5 12 11.5C10.6193 11.5 9.5 10.3807 9.5 9Z"
+                                                fill="black" />
+                                        </g>
+                                    </svg>
+                                    <span class="card-city-group">Santo Amaro |</span>
+                                    <span class="card-person-group">Carneirinho</span>
+                                </div>
+                                <!--fim div pessoa e cidade-->
+                                <p class="card-text-group">Grupo de capoeira voltado a rodas de capoeira para o público
+                                    tal
+                                    e
+                                    tal
+                                    e
+                                    tal adadaaaaaaaaa aaaaaaaaaaaaaaaaaaaaa</p>
 
-                        <div class="card-button-group">
-                            <small class="card-city-group">Tipo do grupo</small>
-                            <div class="button-container">
-                                <a href="#" class="button" id="cardButton">
-                                    Ver mais
-                                </a>
+                                <div class="card-button-group">
+                                    <small class="card-city-group">Tipo do grupo</small>
+                                    <div class="button-container">
+                                        <a href="#" class="button" id="cardButton">
+                                            Ver mais
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <!--Fim do card-->
+                        <div class="card-group">
+                            <img class="card-img-group" src="assets/img/acssa.jpg" alt="Entrega de certificado">
+                            <div class="card-wrapper-group">
+
+                                <h3 class="card-title-group">Grupo de Capoeira</h3>
+                                <div class="card-person-city-group">
+                                    <svg class="card-icon-group" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none">
+                                        <g>
+                                            <path
+                                                d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM7 9C7 6.24 9.24 4 12 4C14.76 4 17 6.24 17 9C17 11.88 14.12 16.19 12 18.88C9.92 16.21 7 11.85 7 9ZM9.5 9C9.5 7.61929 10.6193 6.5 12 6.5C12.8932 6.5 13.7185 6.9765 14.1651 7.75C14.6116 8.5235 14.6116 9.4765 14.1651 10.25C13.7185 11.0235 12.8932 11.5 12 11.5C10.6193 11.5 9.5 10.3807 9.5 9Z"
+                                                fill="black" />
+                                        </g>
+                                    </svg>
+                                    <span class="card-city-group">Santo Amaro |</span>
+                                    <span class="card-person-group">Carneirinho</span>
+                                </div>
+                                <!--fim div pessoa e cidade-->
+                                <p class="card-text-group">Grupo de capoeira voltado a rodas de capoeira para o público
+                                    tal
+                                    e
+                                    tal
+                                    e
+                                    tal adadaaaaaaaaa aaaaaaaaaaaaaaaaaaaaa</p>
+
+                                <div class="card-button-group">
+                                    <small class="card-city-group">Tipo do grupo</small>
+                                    <div class="button-container">
+                                        <a href="#" class="button" id="cardButton">
+                                            Ver mais
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Fim do card-->
+                        <div class="card-group">
+                            <img class="card-img-group" src="assets/img/acssa.jpg" alt="Entrega de certificado">
+                            <div class="card-wrapper-group">
+
+                                <h3 class="card-title-group">Grupo de Capoeira</h3>
+                                <div class="card-person-city-group">
+                                    <svg class="card-icon-group" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none">
+                                        <g>
+                                            <path
+                                                d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM7 9C7 6.24 9.24 4 12 4C14.76 4 17 6.24 17 9C17 11.88 14.12 16.19 12 18.88C9.92 16.21 7 11.85 7 9ZM9.5 9C9.5 7.61929 10.6193 6.5 12 6.5C12.8932 6.5 13.7185 6.9765 14.1651 7.75C14.6116 8.5235 14.6116 9.4765 14.1651 10.25C13.7185 11.0235 12.8932 11.5 12 11.5C10.6193 11.5 9.5 10.3807 9.5 9Z"
+                                                fill="black" />
+                                        </g>
+                                    </svg>
+                                    <span class="card-city-group">Santo Amaro |</span>
+                                    <span class="card-person-group">Carneirinho</span>
+                                </div>
+                                <!--fim div pessoa e cidade-->
+                                <p class="card-text-group">Grupo de capoeira voltado a rodas de capoeira para o público
+                                    tal
+                                    e
+                                    tal
+                                    e
+                                    tal adadaaaaaaaaa aaaaaaaaaaaaaaaaaaaaa</p>
+
+                                <div class="card-button-group">
+                                    <small class="card-city-group">Tipo do grupo</small>
+                                    <div class="button-container">
+                                        <a href="#" class="button" id="cardButton">
+                                            Ver mais
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Fim do card-->
                     </div>
                 </div>
-                <!--Fim do card-->
-            </div>
+            </section>
         </div>
         <div class="button-container" id="buttonContainer">
             <a href="#" class="button" id="more">
                 Ver mais resutados
             </a>
         </div>
-    </section>
-
+    </main>
 
     <footer class="footer padding">
         <div class="footer-container">
@@ -257,7 +269,9 @@
                 </div>
                 <div class="footer-element">
                     <h2 class="footer-title">Notícias recentes</h2>
-                    <h2 class="card-blog-title">O que é Economia Solidária?</h2>
+                    <a href="#">
+                        <h2 class="card-blog-title">O que é Economia Solidária?</h2>
+                    </a>
                     <div class="card-blog-clock">
                         <svg class="clock" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -323,7 +337,6 @@
 
         </div>
     </footer>
-
 </body>
 
 </html>
