@@ -143,7 +143,7 @@
 }
 
 .mission-content {
-    padding: 4%;
+    padding: 4% 8%;
 }
 
 .mission-wrapper {
@@ -181,7 +181,7 @@
 .our-team {
     background: url('../img/wave.png') no-repeat;
     background-size: cover;
-    padding: 96px 92px;
+    padding: 6% 8%;
 }
 
 #owlOurTeam .item {
@@ -236,11 +236,11 @@
     fill: #fff;
 }
 
-#social-left {
+.social-left {
     left: 20px;
 }
 
-#social-right {
+.social-right {
     right: 20px;
 }
 

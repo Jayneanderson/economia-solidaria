@@ -1,14 +1,21 @@
-* {box-sizing: border-box; padding: 0; margin: 0}
+* {
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+}
 
 html {
     font-size: 16px;
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', 'Helvettica', 'Arial', sans-serif;
     text-rendering: optimizeLegibility !important; /* deixa a fonte menos "pixalizada". A 2ª propriedade sobreescreve qualquer outra text-rendering*/
     -webkit-font-smoothing: antialiased !important;
     padding-bottom: 32px;
+}
+
+input {
+    
 }
 
 :root {
@@ -30,6 +37,11 @@ a {
     text-align: center;
     color: var(--white);
     margin-bottom: 24px;
+}
+
+.padding-header {
+    padding-top: 90px;
+
 }
 
 .padding {
@@ -112,7 +124,6 @@ a {
 }
 
 .banner-container {
-    padding-top: 90px;
     height: calc(100% - 90px);
     background-color: #F5F5F5;
     z-index: 0;
@@ -259,7 +270,7 @@ a {
 
 .card-blog-content {
     border-radius: 8px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .32);
+    box-shadow: 0px 5px 28px 1.5px rgba(149, 152, 200, .25);
 }
 
 .card-blog {
@@ -298,6 +309,7 @@ a {
 
 .card-blog-link {
     display: flex;
+    align-items: center;
     color: var(--green-medium);
     transition: .2s;
 }
@@ -324,7 +336,7 @@ a {
 
 .flow {
     /* background: url('../img/wave.png') no-repeat; */
-    padding-bottom: 3%;
+    padding-top: 3%;
 }
 
 .flow-img-container {
@@ -356,6 +368,14 @@ a {
     flex-direction: column;
     padding: 2%;
     color: var(--white);
+}
+
+.footer-element:first-child {
+    padding-left: 0;
+}
+
+.footer-element:last-child {
+    padding-right: 0;
 }
 
 .footer-img {
@@ -390,6 +410,10 @@ a {
     color: var(--white);
 }
 
+.footer-links .item-link:hover {
+    color:#212121;
+}
+
 .footer-links .item-link::before {
     content: '•';
     margin-right: 5px;
@@ -399,6 +423,11 @@ a {
     font-size: 16px;
     line-height: 1.5;
     color: var(--white);
+}
+
+.footer-element .card-blog-title:hover {
+    color: #212121;
+    transition: .2s;
 }
 
 .footer-element .card-blog-clock {
@@ -447,7 +476,11 @@ a {
 
 }
 
-.footer-icon:hover path {
+.footer-icon path {
     fill: #ffffff;
+}
+
+.footer-icon:hover path {
+    fill: #212121;
     transition: .2s;
 }

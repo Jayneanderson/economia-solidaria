@@ -189,6 +189,7 @@
 }
 
 .filter-city {
+    position: relative;
 }
 
 .filter-text {
@@ -235,9 +236,38 @@
     border-right: 2px solid #185669;
 }
 
+.desactive {
+    display: none;
+}
+
 .custom-filter {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 27px;
+    z-index: 4;
     border-radius: 5px;
     box-shadow: 0px 5px 28px 2px rgba(149, 152, 200, 30%);
+}
+
+.close {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: -23px;
+    padding: 2px 4px;
+    padding-top: 1px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    transition: .2s;
+    background-color: rgba(117, 117, 117, .3);
+}
+
+.close:hover {
+    cursor: pointer;
+    transition: .2s;
+    background-color: rgba(117, 117, 117, .5);
 }
 
 #search-city {
@@ -245,11 +275,11 @@
     padding : 10px;
     outline: none;
     border: 1px solid #757575;
-    border-radius: 5px 5px 0px 0px;
+    /* border-radius: 5px 5px 0px 0px; */
 }
 
 #search-city:focus {
-    border: 1px solid rgba(24, 86, 105, 1);
+    border-color:rgba(24, 86, 105, 1);
 }
 
 .filter-city-item {
@@ -274,8 +304,9 @@
     cursor: pointer;
 }
 
-input[type="checkbox"] {
+.input-city[type="checkbox"] {
     margin-right: 8px;
+    cursor: pointer;
 }
 
 option {
