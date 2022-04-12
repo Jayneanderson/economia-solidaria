@@ -360,6 +360,7 @@ a {
 
 .footer-list {
     display: flex;
+    justify-content: space-between;
 }
 
 .footer-element {

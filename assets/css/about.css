@@ -181,25 +181,43 @@
 .our-team {
     background: url('../img/wave.png') no-repeat;
     background-size: cover;
-    padding: 6% 8%;
+    /* padding: 6% 8%; */
+}
+
+.our-team-title {
+    margin-bottom: 3%;
+    font-size: 2rem;
+    color: #185669;
+    text-align: center;
+}
+
+#owlOurTeam {
+}
+
+#owlOurTeam.owl-carousel {
 }
 
 #owlOurTeam .item {
     width: 262.5px;
-    padding: 24px 32px;
+    margin: 0 12px;
+    padding: 24px 24px;
     border-radius: 8px;
     background-color: var(--white);
 }
 
-#owlOurTeam .owl-item.active {
-    width: 262.5px;
+.team-item {
+    border-radius: 8px;
+    background-color: var(--white);
 }
 
+.team-item:first {
+    padding: 0;
+}
 .team-wrapper {
     position: relative;
 }
 
-.team-img {
+#owlOurTeam .team-img {
     width: 202px;
     height: 202px;
     border-radius: 50%;
