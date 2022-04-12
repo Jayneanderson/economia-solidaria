@@ -1,0 +1,131 @@
+body {
+    background-color: #1d222c;
+}
+
+.faq-container {
+    background-color: #fff;
+}
+
+.faq-search-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 24px 0px;
+}
+
+.faq-title {
+    margin-bottom: 24px;
+    font-size: 2rem;
+    color: var(--green-strong);
+}
+
+.faq-search-field {
+    height: 42px;
+}
+
+#field {
+    width: 30vw;
+    height: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--green-strong);
+    box-shadow: none;
+    background-color: #fff;
+    font-size: 16px;
+}
+.faq-button {
+    height: 100%;
+    padding: 12px 24px;
+    background-color: #fff;
+    border: 1px solid var(--green-strong);
+    font-size: 14px;
+}
+
+.faq-button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 205, 180, 0.5);
+}
+
+/* -----------Estilizando o menu da coluna 1----------- */
+
+.col-1-menu-list {
+    display: none;
+}
+
+.card-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.col-1-card {
+    width: 350px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.card-item {
+    margin-right: 16px;
+    margin-bottom: 16px;
+    background-color: #fff;
+    box-shadow: 0 0px 4px 1px rgba(0, 0, 0, .3);
+    border-radius: 3px;
+    transition: .2s;
+}
+
+.card-item:hover {
+    /* background-color: rgba(196, 196, 196, 0.1); */
+    background-color: var(--green-strong);
+    box-shadow: 0 0px 4px 1px rgba(0, 0, 0, .5);
+    transition: .2s;
+}
+
+.card-item:hover .card-title, .card-item:hover .card-description {
+    color: #ffffff;
+}
+
+.card-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-wrapper {
+    display: flex;
+}
+
+.card-title-description {
+}
+
+.card-title {
+    color: var(--green-strong);
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.card-description {
+    /* overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; */
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--green-strong);
+    text-align: center;
+}
+
+.card-more {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-arrow-right:hover {
+    color: #1d222c;
+}
