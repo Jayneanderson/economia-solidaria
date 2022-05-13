@@ -11,7 +11,7 @@ body {
     font-family: 'Lato', 'Helvettica', 'Arial', sans-serif;
     text-rendering: optimizeLegibility !important; /* deixa a fonte menos "pixalizada". A 2ª propriedade sobreescreve qualquer outra text-rendering*/
     -webkit-font-smoothing: antialiased !important;
-    padding-bottom: 32px;
+    background-color: var(--white);
 }
 
 input {
@@ -33,6 +33,13 @@ a {
     text-decoration: none;
 }
 
+.title {
+    margin-bottom: 3%;
+    font-size: 2rem;
+    text-align: center;
+    color: #185669;
+}
+
 #subtitle {
     text-align: center;
     color: var(--white);
@@ -46,6 +53,10 @@ a {
 
 .padding {
     padding: 0 8%;
+}
+
+.standart-spaces {
+    padding: 4% 8%;
 }
 
 .container {
@@ -72,6 +83,10 @@ a {
 
 .logo {
     width: 18%;
+}
+
+.logo-link {
+    text-decoration: none;
 }
 
 .navigator {
@@ -138,7 +153,6 @@ a {
 .banner {
     display: flex;
     justify-content: space-between;
-    padding: 3% 8%;
 }
 
 .banner-information {
@@ -191,7 +205,6 @@ a {
 }
 
 .initiative-container {
-    padding: 5% 8%;
 }
 
 .initiatives {
@@ -209,14 +222,17 @@ a {
 }
 
 #impact {
-    padding: 4% 0;
     background-color: var(--green-weak);
+}
+
+#impact .title {
+    color: #ffffff;
 }
 
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, 230px);
-    justify-content: center;
+    justify-content: space-around;
     grid-gap: 16px;
 }
 
@@ -253,12 +269,6 @@ a {
 }
 
 .card-blog-container {
-    padding: 4% 8%;
-}
-
-#blog-title {
-    margin-bottom: 32px;
-    text-align: center;
 }
 
 .cards-blog-list {
@@ -336,7 +346,6 @@ a {
 
 .flow {
     /* background: url('../img/wave.png') no-repeat; */
-    padding-top: 3%;
 }
 
 .flow-img-container {
@@ -441,7 +450,6 @@ a {
 
 .footer-element .clock path {
     fill: var(--white);
-    
 }
 
 .date {
@@ -449,16 +457,17 @@ a {
 }
 
 .footer-btn {
-    display: flex;    
+    display: flex;
     position: relative;
 }
 
 .input {
+    min-width: 100%;
     height: 40px;
     border: none;
     color: var(--green-strong);
     border-radius: 8px;
-    padding: 10px 25px;
+    padding: 10px 16px;
 }
 
 .button-style {
@@ -478,7 +487,7 @@ a {
 }
 
 .footer-icon path {
-    fill: #ffffff;
+    fill: var(--white);
 }
 
 .footer-icon:hover path {

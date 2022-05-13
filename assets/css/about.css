@@ -179,16 +179,12 @@
 }
 
 .our-team {
-    background: url('../img/wave.png') no-repeat;
-    background-size: cover;
-    /* padding: 6% 8%; */
+    padding: 3% 0;
+    background-color: var(--green-weak);
 }
 
-.our-team-title {
-    margin-bottom: 3%;
-    font-size: 2rem;
-    color: #185669;
-    text-align: center;
+.our-team .title {
+    color: var(--white);
 }
 
 #owlOurTeam {
@@ -205,6 +201,10 @@
     background-color: var(--white);
 }
 
+#owlOurTeam .item:last-child {
+    margin-right: 0;
+}
+
 .team-item {
     border-radius: 8px;
     background-color: var(--white);
@@ -218,7 +218,6 @@
 }
 
 #owlOurTeam .team-img {
-    width: 202px;
     height: 202px;
     border-radius: 50%;
 }
@@ -276,4 +275,63 @@
     font-size: 18px;
     font-weight: 600;
     color: var(--green-medium);
+}
+
+.alternative-footer {
+    background-color: var(--white);
+}
+
+.alternative-footer .footer-element {
+    color: #212121;
+}
+
+.alternative-footer
+.footer-links .item-link {
+    color: #212121;
+}
+
+.alternative-footer
+.footer-links .item-link:hover {
+    color: var(--green-strong);
+}
+
+.alternative-footer
+.footer-element .card-blog-title {
+    color: #212121;
+}
+
+.alternative-footer
+.footer-element .card-blog-title:hover {
+    color: var(--green-strong);
+}
+
+.alternative-footer
+.footer-btn {
+    width: 100%     ;
+}
+
+.alternative-footer
+.input {
+    border: 1px solid var(--green-strong);
+    border-right-color: transparent;
+}
+
+.alternative-footer
+.button-style {
+    position: absolute;
+}
+
+.alternative-footer
+.footer-element .clock path {
+    fill: #212121;
+}
+
+.alternative-footer
+.footer-icon path {
+    fill: #212121;
+}
+
+.alternative-footer
+.footer-icon:hover path {
+    fill: var(--green-strong);
 }

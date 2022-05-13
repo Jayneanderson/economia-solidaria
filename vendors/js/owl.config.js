@@ -26,7 +26,7 @@ $('#owl').owlCarousel({
 $('#owlOurTeam').owlCarousel({
     loop: true,/* informa que eu quero um loop, ou seja, repetir mesmo que acabe as imagens */
     dots: false,
-    margin: 30,
+    margin: 0,
     autoplay: false,
     autoplayTimeout: 2000,
     responsive: {
